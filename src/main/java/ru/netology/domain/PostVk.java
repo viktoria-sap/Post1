@@ -1,5 +1,4 @@
 package ru.netology.domain;
-
 public class PostVk {
     private String namePost;
     private String date;
@@ -11,5 +10,4 @@ public class PostVk {
     private int views;
     private int reposts;
     private int likes;
-
 }
