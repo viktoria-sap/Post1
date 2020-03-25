@@ -2,13 +2,18 @@ package ru.netology.domain;
 
 public class PostVk {
     private boolean isFavorite;
+    private boolean ownersOnly;
 
     private String postType;
+
     private String imageUrl;
     private String text;
+    private String domain;
+    private String query;
 
     private int id;
     private int ownerId;
+    private int postId;
     private int fromId;
     private int createdBy;
     private int date;
@@ -22,6 +27,56 @@ public class PostVk {
     private int isPinned;
     private int markedAsAdd;
     private int postponedId;
+    private int count;
+    private int offset;
+
+    public int getPostId() {
+        return postId;
+    }
+
+    public void setPostId(int postId) {
+        this.postId = postId;
+    }
+
+    public int getOffset() {
+        return offset;
+    }
+
+    public void setOffset(int offset) {
+        this.offset = offset;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public boolean isOwnersOnly() {
+        return ownersOnly;
+    }
+
+    public void setOwnersOnly(boolean ownersOnly) {
+        this.ownersOnly = ownersOnly;
+    }
+
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
+    }
+
+    public String getDomain() {
+        return domain;
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
 
     public boolean isFavorite() {
         return isFavorite;
