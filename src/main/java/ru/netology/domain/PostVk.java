@@ -8,8 +8,8 @@ public class PostVk {
 
     private String imageUrl;
     private String text;
-    private String domain;
-    private String query;
+    private int domain;
+    private int query;
 
     private int id;
     private int ownerId;
@@ -62,19 +62,19 @@ public class PostVk {
         this.ownersOnly = ownersOnly;
     }
 
-    public String getQuery() {
+    public int getQuery() {
         return query;
     }
 
-    public void setQuery(String query) {
+    public void setQuery(int query) {
         this.query = query;
     }
 
-    public String getDomain() {
+    public int getDomain() {
         return domain;
     }
 
-    public void setDomain(String domain) {
+    public void setDomain(int domain) {
         this.domain = domain;
     }
 

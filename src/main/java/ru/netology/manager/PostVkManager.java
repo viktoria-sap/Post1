@@ -5,7 +5,7 @@ import ru.netology.domain.PostVk;
 public class PostVkManager {
     private PostVk[] objects;
 
-    public PostVk[] search (int ownerId, boolean ownersOnly, int count, int offset) {
+    public PostVk[] search (int ownerId, int domain, int query, boolean ownersOnly, int count, int offset) {
         // TODO: add logic
         return null;
     }
