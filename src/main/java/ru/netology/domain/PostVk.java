@@ -2,14 +2,14 @@ package ru.netology.domain;
 
 public class PostVk {
     private boolean isFavorite;
-    private boolean ownersOnly;
+    private int ownersOnly;
 
     private String postType;
 
     private String imageUrl;
     private String text;
-    private int domain;
-    private int query;
+    private String domain;
+    private String query;
 
     private int id;
     private int ownerId;
@@ -54,27 +54,27 @@ public class PostVk {
         this.count = count;
     }
 
-    public boolean isOwnersOnly() {
+    public int isOwnersOnly() {
         return ownersOnly;
     }
 
-    public void setOwnersOnly(boolean ownersOnly) {
+    public void setOwnersOnly(int ownersOnly) {
         this.ownersOnly = ownersOnly;
     }
 
-    public int getQuery() {
+    public String getQuery() {
         return query;
     }
 
-    public void setQuery(int query) {
+    public void setQuery(String query) {
         this.query = query;
     }
 
-    public int getDomain() {
+    public String getDomain() {
         return domain;
     }
 
-    public void setDomain(int domain) {
+    public void setDomain(String domain) {
         this.domain = domain;
     }
 
